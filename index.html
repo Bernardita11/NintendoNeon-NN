@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NintendoNeon</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+
+<!-- header -->
+
+<header class="header">
+
+    <a href="#home" class="logo"> <img src="images/iconos/icons8-nintendo-40.png" alt=""> <img src="images/iconos/icons8-nintendo-40 (1).png" alt=""> </a>
+
+    <form action="" class="search-form">
+        <input type="search" name="" placeholder="search here..." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        <a href="login.html" class="fas fa-user"></a>
+    </div>
+
+</header>
+
+<!-- navbar -->
+
+<nav class="navbar">
+    <div id="close-navbar" class="fas fa-times"></div>
+    <a href="index.html">Inicio</a>
+    <a href="shopping.html">Shopping</a>
+    <a href="pokedex.html">Pokedex</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="login.html">Login</a>
+</nav>
+
+
+<!-- home -->
+
+<section class="home" id="home">
+
+    <div class="slide active">
+        <div class="content">
+            <img src="images/home/portada-home1.jpeg" alt="">
+            <span>BIENVENIDO A</span> 
+            <h3 class="nintendo">NINTENDONEON</h3>
+            <a href="contacto.html" class="btn">Contacto</a>
+            <div class="controls">
+                <div class="fas fa-angle-left" onclick="prev()"></div>
+                <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+        </div>
+        <div class="image">
+            <img src="images/home/portada-home1.jpeg" alt="">
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="content">
+            <img src="images/home/portadahome2.jpeg" alt="">
+            <span>new arrivals</span>
+            <h3 class="nintendo">SWITCH GAMES</h3>
+            <a href="#shop" class="btn">Ver más</a>
+            <div class="controls">
+                <div class="fas fa-angle-left" onclick="prev()"></div>
+                <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+        </div>
+        <div class="image">
+            <img src="images/home/portadahome2.jpeg" alt="">
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="content">
+            <img src="images/home/portada-home3.jpeg" alt="">
+            <span>new collection</span>
+            <h3 class="nintendo">BAMSER</h3>
+            <a href="#arrivals" class="btn">Ver más</a>
+            <div class="controls">
+                <div class="fas fa-angle-left" onclick="prev()"></div>
+                <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+        </div>
+        <div class="image">
+            <img src="images/home/portada-home3.jpeg" alt="">
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="content">
+            <img src="images/home/pokedex.JPG" alt="">
+            <span>Conoce</span>
+            <h3 class="nintendo">LA POKEDEX</h3>
+            <a href="pokedex.html" class="btn">Visitar</a>
+            <a href="busca-pokemon.html" class="btn">O busca tu pokémon</a>
+            <div class="controls">
+                <div class="fas fa-angle-left" onclick="prev()"></div>
+                <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+        </div>
+        <div class="image">
+            <img src="images/home/pokedex.JPG" alt="">
+        </div>
+    </div>
+
+</section>
+
+
+<!-- category -->
+
+<section class="category">
+
+    <a href="#" class="box">
+        <img src="images/iconos/icons8-pokeball-96.png" alt="">
+        <p>Revolución</p>
+    </a>
+
+    <a href="#" class="box">
+        <img src="images/iconos/icons8-pikachu-pokemon-100.png" alt="">
+        <p>Diversión</p>
+    </a>
+
+    <a href="#" class="box">
+        <img src="images/iconos/icons8-bullbasaur-100.png" alt="">
+        <p>Energía</p>
+    </a>
+
+    <a href="#" class="box">
+        <img src="images/iconos/icons8-charmander-100.png" alt="">
+        <p>Poder</p>
+    </a>
+
+    <a href="#" class="box">
+        <img src="images/iconos/icons8-squirtle-100.png" alt="">
+        <p>Batalla</p>
+    </a>
+
+    <a href="#" class="box">
+        <img src="images/iconos/icons8-eevee-100.png" alt="">
+        <p>Amistad</p>
+    </a>
+
+</section>
+
+
+<!-- about -->
+
+<section class="about" id="about">
+
+    <div class="content">
+        <span>¿Por qué elegirnos?</span>
+        <h3>Conviértete en un jugador con NintendoNeon</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum explicabo, quos voluptate incidunt illo, blanditiis, accusamus ut quisquam quia sapiente iure. Rerum earum corrupti neque, nobis ratione obcaecati voluptatem fuga.</p>
+        <a href="#" class="btn">Leer más</a>
+    </div>
+    
+</section>
+
+
+<!-- shop -->
+
+<section class="shop" id="shop">
+
+    <div class="heading">
+        <a href="#shop"><h1>SWITCH GAMES</h1></a>
+        <p>New Arrivals</p>
+    </div>
+
+    <div class="swiper products-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-25%</span>
+                    <img src="images/switch/switch-1.JPG" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>Pokkén Tournament </p>
+                    <div class="price">$49.99 <span>$79.99</span></div>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-25%</span>
+                    <img src="images/switch/switch-2.JPG" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>Super Smash Bros</p>
+                    <div class="price">$49.99 <span>$79.99</span></div>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-25%</span>
+                    <img src="images/switch/switch-3.JPG" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>Super Mario Odyssey</p>
+                    <div class="price">$49.99 <span>$79.99</span></div>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-25%</span>
+                    <img src="images/switch/switch-4.JPG" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>DKC: Tropical Freeze</p>
+                    <div class="price">$49.99 <span>$79.99</span></div>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-25%</span>
+                    <img src="images/switch/swith-5.JPG" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>Sonic Forces</p>
+                    <div class="price">$49.99 <span>$79.99</span></div>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-25%</span>
+                    <img src="images/switch/switch-6.JPG" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>Mario & Sonic</p>
+                    <div class="price">$49.99 <span>$79.99</span></div>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-25%</span>
+                    <img src="images/switch/switch-7.JPG" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>Pokémon Arceus</p>
+                    <div class="price">$49.99 <span>$79.99</span></div>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-25%</span>
+                    <img src="images/switch/switch--8.JPG" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>Kirby</p>
+                    <div class="price">$49.99 <span>$79.99</span></div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+
+</section>
+
+
+<!-- gallery  -->
+
+<section class="gallery" id="gallery">
+
+    <div class="heading">
+        <a href="#gallery"><h1>Gallery</h1></a>
+        <p>Ven a nuestro lugar y disfruta del momento ¡Te esperamos!</p>
+    </div>
+
+    <div class="lightbox">
+        <a href="images/gallery/gallery-1.JPG"><img src="images/gallery/gallery-1.JPG" alt=""></a>
+        <a href="images/gallery/gallery-2.JPG"><img src="images/gallery/gallery-2.JPG" alt=""></a>
+        <a href="images/gallery/gallery-3.JPG"><img src="images/gallery/gallery-3.JPG" alt=""></a>
+        <a href="images/gallery/gallery-4.JPG"><img src="images/gallery/gallery-4.JPG" alt=""></a>
+        <a href="images/gallery/gallery-5.JPG"><img src="images/gallery/gallery-5.JPG" alt=""></a>
+        <a href="images/gallery/gallery-6.JPG"><img src="images/gallery/gallery-6.JPG" alt=""></a>
+    </div>
+
+</section>
+
+
+<!-- team -->
+
+<section class="team" id="team">
+
+    <div class="heading">
+        <h1>Nuestro TEAM</h1>
+        <p>Conoce a nuestros jugadores estrellas</p>
+    </div>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <img src="images/team/team-1.JPG" alt="">
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Jason Link</h3>
+                <p>Game Tester - Programador</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/team/team-2.JPG" alt="">
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Grace Jackson</h3>
+                <p>Diseñadora Web - Guionista</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/team/team-3.JPG" alt="">
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Jhon Deon</h3>
+                <p>Traductor - Compositor</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- arrivals -->
+
+<section class="arrivals" id="arrivals">
+
+    <section class="arrivals" id="arrivals">
+
+        <div class="heading">
+            <a href="#arrivals"></a><h1>BAMSER</h1>
+            <p>New Arrivals Pokémon</p>
+        </div>
+
+    <div class="swiper arrivals-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/bammer/bammer-1.JPG" alt="">
+                </div>
+                <div class="content">
+                    <p>Lapras</p>
+                    <div class="price">$49.99 <span>$79.99</span></div>
+                    <a href="#" class="btn">Favorito</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/bammer/bammer-2.JPG" alt="">
+                </div>
+                <div class="content">
+                    <p>Jolteon</p>
+                    <div class="price">$49.99 <span>$79.99</span></div>
+                    <a href="#" class="btn">Favorito</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/bammer/bammer-3.JPG" alt="">
+                </div>
+                <div class="content">
+                    <p>Eevee</p>
+                    <div class="price">$49.99 <span>$79.99</span></div>
+                    <a href="#" class="btn">Favorito</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/bammer/bammer-4.JPG" alt="">
+                </div>
+                <div class="content">
+                    <p>Cyndaquil</p>
+                    <div class="price">$49.99 <span>$79.99</span></div>
+                    <a href="#" class="btn">Favorito</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/bammer/bammer-5.JPG" alt="">
+                </div>
+                <div class="content">
+                    <p>Growlithe</p>
+                    <div class="price">$49.99 <span>$79.99</span></div>
+                    <a href="#" class="btn">Favorito</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/bammer/bammer-6.JPG" alt="">
+                </div>
+                <div class="content">
+                    <p>Vulpix</p>
+                    <div class="price">$49.99 <span>$79.99</span></div>
+                    <a href="#" class="btn">Favorito</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/bammer/bammer-7.JPG" alt="">
+                </div>
+                <div class="content">
+                    <p>Scorbunny</p>
+                    <div class="price">$49.99 <span>$79.99</span></div>
+                    <a href="#" class="btn">Favorito</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/bammer/bammer-8.JPG" alt="">
+                </div>
+                <div class="content">
+                    <p>Popplio</p>
+                    <div class="price">$49.99 <span>$79.99</span></div>
+                    <a href="#" class="btn">Favorito</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+    
+</section>
+
+
+
+<!-- reviews  -->
+
+<section class="reviews">
+
+    <div class="swiper reviews-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+                <div class="user">
+                    <img src="images/review/pic-1.png" alt="">
+                    <div class="info">
+                        <h3>Jackson Edwin</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In quis ipsa aspernatur incidunt iusto veniam cumque error quaerat officia. Aspernatur?</p>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="user">
+                    <img src="images/review/pic-2.png" alt="">
+                    <div class="info">
+                        <h3>Lucy Demon</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum similique, numquam non, quasi, voluptatibus perspiciatis fugiat incidunt veniam nulla in aut aliquid necessitatibus nobis reiciendis ullam explicabo. Nulla, rem adipisci.</p>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="user">
+                    <img src="images/review/pic-3.png" alt="">
+                    <div class="info">
+                        <h3>Mark Louis</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit aliquid mollitia voluptatem alias illo officiis.</p>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="user">
+                    <img src="images/review/pic-4.png" alt="">
+                    <div class="info">
+                        <h3> Jennie Liz</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In quis ipsa aspernatur incidunt iusto veniam cumque error quaerat officia. Aspernatur?</p>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="user">
+                    <img src="images/review/pic-5.png" alt="">
+                    <div class="info">
+                        <h3>Jonathan Rei</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus sequi minima sed obcaecati iste beatae quo praesentium, deleniti earum velit labore nobis voluptates a quam veniam delectus fugiat! Saepe, eos!</p>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="user">
+                    <img src="images/review/pic-6.png" alt="">
+                    <div class="info">
+                        <h3>Liz Woo</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In quis ipsa aspernatur incidunt iusto veniam cumque error quaerat officia. Aspernatur?</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- service -->
+
+<section class="service">
+
+    <div class="box">
+        <img src="images/services/service-2.png" alt="">
+        <h3>Pago Seguro</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, fugit?</p>
+    </div>
+
+    <div class="box">
+        <img src="images/services/service-3.png" alt="">
+        <h3>Soporte 24/7</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, fugit?</p>
+    </div>
+
+    <div class="box">
+        <img src="images/services/service-4.png" alt="">
+        <h3>Atención Excelente</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, fugit?</p>
+    </div>
+    
+        <div class="box">
+        <img src="images/services/icons8-super-mario-50.png" alt="">
+        <h3>Super Diversión</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, fugit?</p>
+    </div>
+
+</section>
+
+
+<!-- blogs -->
+
+<section class="blogs" id="blogs">
+
+    <div class="heading">
+        <h1>Daily Blogs</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi consequuntur officia beatae distinctio minus optio?</p>
+    </div>
+
+    <div class="swiper blogs-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/blog/blog-3.JPG" alt="">
+                    <div class="icons">
+                        <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                        <a href="#"> <i class="fas fa-clock"></i> 21 de mayo, 2021 </a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>blog </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, debitis?</p>
+                    <a href="#" class="btn">Ver más</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/blog/blog-5.JPG" alt="">
+                    <div class="icons">
+                        <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                        <a href="#"> <i class="fas fa-clock"></i> 28 de jun, 2022 </a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>blog </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, debitis?</p>
+                    <a href="#" class="btn">Ver más</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/blog/blog-1.JPG" alt="">
+                    <div class="icons">
+                        <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                        <a href="#"> <i class="fas fa-clock"></i> 18 de abr, 2022 </a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>blog</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, debitis?</p>
+                    <a href="#" class="btn">Ver más</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/blog/blog-6.JPG" alt="">
+                    <div class="icons">
+                        <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                        <a href="#"> <i class="fas fa-clock"></i> 10 de feb, 2022 </a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>blog</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, debitis?</p>
+                    <a href="#" class="btn">Ver más</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/blog/blog-2.JPG" alt="">
+                    <div class="icons">
+                        <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                        <a href="#"> <i class="fas fa-clock"></i> 18 de jul, 2022 </a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>blog</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, debitis?</p>
+                    <a href="#" class="btn">Ver más</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/blog/blog-4.JPG" alt="">
+                    <div class="icons">
+                        <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                        <a href="#"> <i class="fas fa-clock"></i> 28 de dic, 2021 </a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>blog</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, debitis?</p>
+                    <a href="#" class="btn">Ver más</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+
+</section>
+
+
+<!-- footer -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a class="link" href="index.html"><i class="fas fa-angle-right"></i>Inicio</a>
+            <a class="link" href="shopping.html"><i class="fas fa-angle-right"></i>Shopping</a>
+            <a class="link" href="pokedex.html"><i class="fas fa-angle-right"></i>Pokedex</a>
+            <a class="link" href="contacto.html"><i class="fas fa-angle-right"></i>Contacto</a>
+            <a class="link" href="login.html"><i class="fas fa-angle-right"></i>Login</a>
+        </div>
+
+        <div class="box">
+            <h3>extra links</h3>
+            <a href="busca-pokemon.html" class="link"> <i class="fas fa-angle-right"></i> Tu Pokémon </a>
+            <a href="#gallery" class="link"> <i class="fas fa-angle-right"></i> Gallery </a>
+            <a href="#shop" class="link"> <i class="fas fa-angle-right"></i> New Switch Games </a>
+            <a href="#arrivals" class="link"> <i class="fas fa-angle-right"></i> New Bammers </a>
+            <a href="#" class="link"> <i class="fas fa-angle-right"></i> Política de Privacidad </a>
+            <a href="#" class="link"> <i class="fas fa-angle-right"></i> Términos y Condiciones </a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <p> <i class="fas fa-phone"></i> (+34) 600 78 90 </p>
+            <p> <i class="fas fa-phone"></i> (+34) 600 33 33 </p>
+            <p> <i class="fas fa-envelope"></i> nintendoneon@gmail.com </p>
+            <p> <i class="fas fa-map"></i> Marbella - España - 400104 </p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="credit"> Created by <span>NintendoNeon</span> | all rights reserved! </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link      -->
+<script src="js/script.js"></script>
+
+<script>
+    lightGallery(document.querySelector('.gallery .lightbox'));
+</script>
+    
+</body>
+</html>
